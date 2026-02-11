@@ -44,7 +44,7 @@ function check(idx)  {
             setTimeout(levelup,1000);
         }
     }else{
-        h2.innerHTML = `Game Over <br> Press any key to restart </br> Your score was :<b> ${score-1} </b> <br> Max Score : ${max}`;
+        h2.innerHTML = `Game Over <br> Press any key to restart </br> Your score was :<b> ${score-1} </b>`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(function(){
         document.querySelector("body").style.backgroundColor="white";
@@ -70,5 +70,6 @@ function reset(){
     level = 0;
     score = 0;
 }
+
 
 
